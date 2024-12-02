@@ -1,0 +1,22 @@
+auth:
+  credentials:
+  - password: '1234'
+    username: admin
+  success:
+    body:
+    - ZebraNet internal wired PS
+    status: 200
+  type: basic_auth
+  url:
+  - /server/TCPIPGEN.htm
+category: printer
+contributor: MakoWish
+default_port: 80
+fingerprint:
+  basic_auth_realm: Network Print Server
+  status: 401
+  url:
+  - /server/TCPIPGEN.htm
+name: Zebra TCPIPGEN
+protocol: http
+ssl: false

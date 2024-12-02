@@ -6,6 +6,138 @@ auth:
     password: ftp
   - username: guest
     password: guest
+  - username: anonymous
+    password: anonymous
+  - username: root
+    password: rootpasswd
+  - username: root
+    password: 12hrs37
+  - username: ftp
+    password: b1uRR3
+  - username: admin
+    password: admin
+  - username: localadmin
+    password: localadmin
+  - username: admin
+    password: 1234
+  - username: apc
+    password: apc
+  - username: admin
+    password: nas
+  - username: Root
+    password: wago
+  - username: Admin
+    password: wago
+  - username: User
+    password: user
+  - username: Guest
+    password: guest
+  - username: ftp
+    password: ftp
+  - username: admin
+    password: password
+  - username: a
+    password: avery
+  - username: admin
+    password: 123456
+  - username: adtec
+    password: none
+  - username: admin
+    password: admin12345
+  - username: none
+    password: dpstelecom
+  - username: instrument
+    password: instrument
+  - username: user
+    password: password
+  - username: root
+    password: password
+  - username: default
+    password: default
+  - username: admin
+    password: default
+  - username: nmt
+    password: 1234
+  - username: admin
+    password: Janitza
+  - username: supervisor
+    password: supervisor
+  - username: user1
+    password: pass1
+  - username: avery
+    password: avery
+  - username: IEIeMerge
+    password: eMerge
+  - username: ADMIN
+    password: 12345
+  - username: beijer
+    password: beijer
+  - username: Admin
+    password: admin
+  - username: admin
+    password: 1234
+  - username: admin
+    password: 1111
+  - username: root
+    password: admin
+  - username: se
+    password: 1234
+  - username: admin
+    password: stingray
+  - username: device
+    password: apc
+  - username: apc
+    password: apc
+  - username: dm
+    password: ftp
+  - username: dmftp
+    password: ftp
+  - username: httpadmin
+    password: fhttpadmin
+  - username: user
+    password: system
+  - username: MELSEC
+    password: MELSEC
+  - username: QNUDECPU
+    password: QNUDECPU
+  - username: ftp_boot
+    password: ftp_boot
+  - username: uploader
+    password: ZYPCOM
+  - username: ftpuser
+    password: password
+  - username: USER
+    password: USER
+  - username: qbf77101
+    password: hexakisoctahedron
+  - username: ntpupdate
+    password: ntpupdate
+  - username: sysdiag
+    password: factorycast@schneider
+  - username: wsupgrade
+    password: wsupgrade
+  - username: pcfactory
+    password: pcfactory
+  - username: loader
+    password: fwdownload
+  - username: test
+    password: testingpw
+  - username: webserver
+    password: webpages
+  - username: fdrusers
+    password: sresurdf
+  - username: nic2212
+    password: poiuypoiuy
+  - username: user
+    password: user00
+  - username: su
+    password: ko2003wa
+  - username: MayGion
+    password: maygion.com
+  - username: admin
+    password: 9999
+  - username: PlcmSpIp
+    password: PlcmSpIp
 category: ftp
 default_port: 21
 name: ftp

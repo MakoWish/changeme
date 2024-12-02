@@ -1,130 +1,1079 @@
-# Mirai botnet credentials from: https://github.com/securing/mirai_credentials/blob/master/mirai_creds.txt
 auth:
   credentials:
-  - username: root
-    password: password
-  - username: root
-    password: root
-  - username: root
-    password: xc3511
-  - username: root
-    password: vizxv
-  - username: root
-    password: admin
-  - username: admin
-    password: admin
-  - username: root
-    password: 888888
-  - username: root
-    password: xmhdipc
-  - username: root
-    password: default
-  - username: root
-    password: juantech
-  - username: root
+  - username: 1.79
+    password: Multi
+  - username: 11111
+    password: x-admin
+  - username: 1234
+    password: 1234
+  - username: 1500
+    password: and 2000 Series
+  - username: 1502
+    password: 1502
+  - username: 266344
+    password: 266344
+  - username: 31994
+    password: 31994
+  - username: 3comcso
+    password: RIP000
+  - username: ADMIN
+    password: ADMIN
+  - username: ADMINISTRATOR
+    password: ADMINISTRATOR
+  - username: ADMN
+    password: admn
+  - username: ADSL
+    password: expert03
+  - username: ADVMAIL
+    password: HP
+  - username: ADVMAIL
+    password: HPOFFICE DATA
+  - username: Admin
+    password:
+  - username: Admin
     password: 123456
-  - username: root
-    password: 54321
-  - username: support
-    password: support
-  - username: root
+  - username: Administrator
     password:
+  - username: Administrator
+    password: 3ware
+  - username: Administrator
+    password: admin
+  - username: Administrator
+    password: changeme
+  - username: Administrator
+    password: ganteng
+  - username: Administrator
+    password: ggdaseuaimhrke
+  - username: Administrator
+    password: letmein
+  - username: Administrator
+    password: password
+  - username: Administrator
+    password: pilou
+  - username: Administrator
+    password: smcadmin
+  - username: Administrator
+    password: the same all over
+  - username: Alphanetworks
+    password: wrgg15_di524
+  - username: Anonymous
+    password:
+  - username: Any
+    password: 12345
+  - username: CISCO15
+    password: otbu+1
+  - username: CSG
+    password: SESAME
+  - username: Cisco
+    password: Cisco
+  - username: D-Link
+    password: D-Link
+  - username: DTA
+    password: TJM
+  - username: FIELD
+    password: HPONLY
+  - username: FIELD
+    password: HPP187 SYS
+  - username: FIELD
+    password: HPWORD PUB
+  - username: FIELD
+    password: LOTUS
+  - username: FIELD
+    password: MANAGER
+  - username: FIELD
+    password: MGR
+  - username: FIELD
+    password: SERVICE
+  - username: FIELD
+    password: SUPPORT
+  - username: FORCE
+    password:
+  - username: Factory
+    password: 56789
+  - username: GEN1
+    password: gen1
+  - username: GEN2
+    password: gen2
+  - username: Gearguy
+    password: Geardog
+  - username: GlobalAdmin
+    password: GlobalAdmin
+  - username: Guest
+    password:
+  - username: HELLO
+    password: FIELD.SUPPORT
+  - username: HELLO
+    password: MANAGER.SYS
+  - username: HELLO
+    password: MGR.SYS
+  - username: HELLO
+    password: OP.OPERATOR
+  - username: HTTP
+    password: HTTP
+  - username: IntraStack
+    password: Asante
+  - username: IntraSwitch
+    password: Asante
+  - username: JDE
+    password: JDE
+  - username: LUCENT01
+    password: UI-PSWD-01
+  - username: LUCENT02
+    password: UI-PSWD-02
+  - username: MAIL
+    password: HPOFFICE
+  - username: MAIL
+    password: MAIL
+  - username: MAIL
+    password: MPE
+  - username: MAIL
+    password: REMOTE
+  - username: MAIL
+    password: TELESUP
+  - username: MANAGER
+    password: COGNOS
+  - username: MANAGER
+    password: HPOFFICE
+  - username: MANAGER
+    password: ITF3000
+  - username: MANAGER
+    password: SECURITY
+  - username: MANAGER
+    password: SYS
+  - username: MANAGER
+    password: TCH
+  - username: MANAGER
+    password: TELESUP
+  - username: MD110
+    password: help
+  - username: MDaemon
+    password: MServer
+  - username: MGR
+    password: CAROLIAN
+  - username: MGR
+    password: CCC
+  - username: MGR
+    password: CNAS
+  - username: MGR
+    password: COGNOS
+  - username: MGR
+    password: CONV
+  - username: MGR
+    password: HPDESK
+  - username: MGR
+    password: HPOFFICE
+  - username: MGR
+    password: HPONLY
+  - username: MGR
+    password: HPP187
+  - username: MGR
+    password: HPP189
+  - username: MGR
+    password: HPP196
+  - username: MGR
+    password: INTX3
+  - username: MGR
+    password: ITF3000
+  - username: MGR
+    password: NETBASE
+  - username: MGR
+    password: REGO
+  - username: MGR
+    password: RJE
+  - username: MGR
+    password: ROBELLE
+  - username: MGR
+    password: SECURITY
+  - username: MGR
+    password: SYS
+  - username: MGR
+    password: TELESUP
+  - username: MGR
+    password: VESOFT
+  - username: MGR
+    password: WORD
+  - username: MGR
+    password: XLSERVER
+  - username: MICRO
+    password: RSX
+  - username: Manager
+    password:
+  - username: Manager
+    password: Admin
+  - username: Manager
+    password: Manager
+  - username: Manager
+    password: friend
+  - username: NAU
+    password: NAU
+  - username: NETOP
+    password:
+  - username: NETWORK
+    password: NETWORK
+  - username: NICONEX
+    password: NICONEX
+  - username: OPERATOR
+    password: COGNOS
+  - username: OPERATOR
+    password: DISC
+  - username: OPERATOR
+    password: SUPPORT
+  - username: OPERATOR
+    password: SYS
+  - username: OPERATOR
+    password: SYSTEM
+  - username: PBX
+    password: PBX
+  - username: PCUSER
+    password: SYS
+  - username: PFCUser
+    password: 240653C9467E45
+  - username: PRODDTA
+    password: PRODDTA
+  - username: PSEAdmin
+    password: $secure$
+  - username: Polycom
+    password: 456
+  - username: Polycom
+    password: SpIp
+  - username: QCC
+    password: QLogic66
+  - username: RMUser1
+    password: password
+  - username: RSBCMON
+    password: SYS
+  - username: Root
+    password:
+  - username: SPOOLMAN
+    password: HPOFFICE
+  - username: SSA
+    password: SSA
+  - username: SUPERUSER
+    password: ANS#150
+  - username: SYSADM
+    password: sysadm
+  - username: SYSDBA
+    password: masterkey
+  - username: Service
+    password: 5678
+  - username: USERID
+    password: PASSW0RD
+  - username: User
+    password:
+  - username: User
+    password: Password
+  - username: Username
+    password: PASSWORD
+  - username: VNC
+    password: winterm
+  - username: WP
+    password: HPOFFICE
+  - username: aaa
+    password: often blank
+  - username: acc
+    password: acc
+  - username: adfexc
+    password: adfexc
+  - username: adm
+    password:
+  - username: admin2
+    password: changeme
+  - username: admin
+    password:
+  - username: admin
+    password: 0
+  - username: admin
+    password: 1111
+  - username: admin
+    password: 123
+  - username: admin
+    password: 1234
+  - username: admin
+    password: 12345
+  - username: admin
+    password: 123456
+  - username: admin
+    password: 1234admin
+  - username: admin
+    password: 2222
+  - username: admin
+    password: 22222
+  - username: admin
+    password: AitbISP4eCiG
+  - username: admin
+    password: Ascend
+  - username: admin
+    password: NetCache
+  - username: admin
+    password: NetSurvibox
+  - username: admin
+    password: OCS
+  - username: admin
+    password: OkiLAN
+  - username: admin
+    password: P@55w0rd!
+  - username: admin
+    password: Password
+  - username: admin
+    password: Password1
+  - username: admin
+    password: Protector
+  - username: admin
+    password: Sharp
+  - username: admin
+    password: access
+  - username: admin
+    password: admanager
+  - username: admin
+    password: admin
+  - username: admin
+    password: admin123
+  - username: admin
+    password: administrator
+  - username: admin
+    password: adrole1
+  - username: admin
+    password: adroot
+  - username: admin
+    password: ads3cret
+  - username: admin
+    password: adslolitec
+  - username: admin
+    password: adslroot
+  - username: admin
+    password: adtomcat
+  - username: admin
+    password: advagrant
+  - username: admin
+    password: articon
+  - username: admin
+    password: asante
+  - username: admin
+    password: asd
+  - username: admin
+    password: atlantis
+  - username: admin
+    password: barricade
+  - username: admin
+    password: bintec
+  - username: admin
+    password: changeme
+  - username: admin
+    password: cisco
+  - username: admin
+    password: comcomcom
+  - username: admin
+    password: default
+  - username: admin
+    password: diamond
+  - username: admin
+    password: draadloos
+  - username: admin
+    password: epicrouter
+  - username: admin
+    password: extendnet
+  - username: admin
+    password: hagpolm1
+  - username: admin
+    password: hello
+  - username: admin
+    password: hp.com
+  - username: admin
+    password: imss7.0
+  - username: admin
+    password: ironport
+  - username: admin
+    password: isee
+  - username: admin
+    password: j5Brn9
+  - username: admin
+    password: leviton
+  - username: admin
+    password: linga
+  - username: admin
+    password: michelangelo
+  - username: admin
+    password: microbusiness
+  - username: admin
+    password: motorola
+  - username: admin
+    password: mu
+  - username: admin
+    password: my_DEMARC
+  - username: admin
+    password: netadmin
+  - username: admin
+    password: noway
+  - username: admin
+    password: operator
+  - username: admin
+    password: owaspbwa
   - username: admin
     password: password
-  - username: root
-    password: 12345
-  - username: user
-    password: user
   - username: admin
-    password:
-  - username: root
-    password: pass
+    password: password1
   - username: admin
-    password: admin1234
-  - username: root
-    password: 1111
+    password: passwort
+  - username: admin
+    password: pfsense
+  - username: admin
+    password: pwp
+  - username: admin
+    password: radius
+  - username: admin
+    password: rmnetlm
+  - username: admin
+    password: root
+  - username: admin
+    password: secure
+  - username: admin
+    password: setup
+  - username: admin
+    password: smallbusiness
   - username: admin
     password: smcadmin
   - username: admin
-    password: 1111
-  - username: root
-    password: 666666
-  - username: root
-    password: 1234
-  - username: root
-    password: klv123
-  - username: Administrator
+    password: superuser
+  - username: admin
+    password: switch
+  - username: admin
+    password: symbol
+  - username: admin
+    password: synnet
+  - username: admin
+    password: sysAdmin
+  - username: admin
+    password: system
+  - username: admin
+    password: tomcat
+  - username: admin
+    password: vagrant
+  - username: admin
+    password: visual
+  - username: admin
+    password: w2402
+  - username: admin
+    password: x-admin
+  - username: admin
+    password: zoomadsl
+  - username: administrator
+    password:
+  - username: administrator
+    password: administrator
+  - username: adminstat
+    password: OCS
+  - username: adminstrator
+    password: changeme
+  - username: adminttd
+    password: adminttd
+  - username: adminuser
+    password: OCS
+  - username: adminview
+    password: OCS
+  - username: ami
+    password:
+  - username: anonymous
+    password:
+  - username: anonymous
+    password: Exabyte
+  - username: anonymous
+    password: any@
+  - username: apc
+    password: apc
+  - username: at4400
+    password: at4400
+  - username: bbsd-client
+    password: NULL
+  - username: bbsd-client
+    password: changeme2
+  - username: bciim
+    password: bciimpw
+  - username: bcim
+    password: bcimpw
+  - username: bcms
+    password: bcmspw
+  - username: bcnas
+    password: bcnaspw
+  - username: blue
+    password: bluepw
+  - username: both
+    password: admanager
+  - username: both
     password: admin
-  - username: service
-    password: service
-  - username: supervisor
-    password: supervisor
+  - username: both
+    password: adrole1
+  - username: both
+    password: adroot
+  - username: both
+    password: ads3cret
+  - username: both
+    password: adtomcat
+  - username: both
+    password: advagrant
+  - username: both
+    password: tomcat
+  - username: browse
+    password: browsepw
+  - username: browse
+    password: looker
+  - username: cablecom
+    password: router
+  - username: cac_admin
+    password: cacadmin
+  - username: ccrusr
+    password: ccrusr
+  - username: cellit
+    password: cellit
+  - username: cgadmin
+    password: cgadmin
+  - username: cisco
+    password:
+  - username: citel
+    password: password
+  - username: client
+    password: client
+  - username: cmaker
+    password: cmaker
+  - username: comcast
+    password:
+  - username: comcast
+    password: 1234
+  - username: corecess
+    password: corecess
+  - username: craft
+    password:
+  - username: craft
+    password: craft
+  - username: craft
+    password: craftpw
+  - username: craft
+    password: crftpw
+  - username: cusadmin
+    password: highspeed
+  - username: cust
+    password: custpw
+  - username: customer
+    password: none
+  - username: cxsdk
+    password: kdsxc
+  - username: d.e.b.u.g
+    password: User
+  - username: dadmin
+    password: dadmin01
+  - username: davox
+    password: davox
+  - username: debug
+    password: synnet
+  - username: demo
+    password: demo
+  - username: deskalt
+    password: password
+  - username: deskman
+    password: changeme
+  - username: desknorm
+    password: password
+  - username: deskres
+    password: password
+  - username: device
+    password: device
+  - username: dhs3mt
+    password: dhs3mt
+  - username: dhs3pms
+    password: dhs3pms
+  - username: diag
+    password: danger
+  - username: diag
+    password: switch
+  - username: disttech
+    password: 4tas
+  - username: draytek
+    password: 1234
+  - username: e250
+    password: e250changeme
+  - username: e500
+    password: e500changeme
+  - username: echo
+    password: User
+  - username: enable
+    password:
+  - username: eng
+    password: engineer
+  - username: engmode
+    password: hawk201
+  - username: enquiry
+    password: enquirypw
+  - username: field
+    password: support
+  - username: ftp_admi
+    password: kilo1987
+  - username: ftp_inst
+    password: pbxk1064
+  - username: ftp_nmc
+    password: tuxalize
+  - username: ftp_oper
+    password: help1954
+  - username: guest
+    password:
+  - username: guest
+    password: User
   - username: guest
     password: guest
-  - username: guest
-    password: 12345
-  - username: guest
-    password: 12345
-  - username: admin1
+  - username: halt
+    password: tlah
+  - username: helpdesk
+    password: OCS
+  - username: hsa
+    password: hsadb
+  - username: hscroot
+    password: abc123
+  - username: hydrasna
+    password:
+  - username: iclock
+    password: timely
+  - username: images
+    password: images
+  - username: inads
+    password: inads
+  - username: inads
+    password: indspw
+  - username: init
+    password: initpw
+  - username: install
+    password: llatsni
+  - username: install
+    password: secret
+  - username: installer
+    password: installer
+  - username: intel
+    password: intel
+  - username: intermec
+    password: intermec
+  - username: isp
+    password: isp
+  - username: j2deployer
+    password: j2deployer
+  - username: jagadmin
+    password:
+  - username: kermit
+    password: kermit
+  - username: l2
+    password: l2
+  - username: l3
+    password: l3
+  - username: locate
+    password: locatepw
+  - username: login
+    password: 0
+  - username: login
+    password: 1111
+  - username: login
+    password: 8429
+  - username: login
+    password: access
+  - username: login
+    password: admin
+  - username: login
     password: password
-  - username: administrator
+  - username: lp
+    password: lp
+  - username: m1122
+    password: m1122
+  - username: mac
+    password:
+  - username: maint
+    password: maint
+  - username: maint
+    password: maintpw
+  - username: maint
+    password: ntacdmax
+  - username: maint
+    password: rwmaint
+  - username: maintainer
+    password: admin
+  - username: maintainer
+    password: bcpb+serial#
+  - username: manage
+    password: '!manage'
+  - username: manager
+    password: admanager
+  - username: manager
+    password: admin
+  - username: manager
+    password: adrole1
+  - username: manager
+    password: adroot
+  - username: manager
+    password: ads3cret
+  - username: manager
+    password: adtomcat
+  - username: manager
+    password: advagrant
+  - username: manager
+    password: friend
+  - username: manager
+    password: manager
+  - username: manuf
+    password: xxyyzz
+  - username: mediator
+    password: mediator
+  - username: mlusr
+    password: mlusr
+  - username: monitor
+    password: monitor
+  - username: mso
+    password: w0rkplac3rul3s
+  - username: mtch
+    password: mtch
+  - username: mtcl
+    password:
+  - username: mtcl
+    password: mtcl
+  - username: naadmin
+    password: naadmin
+  - username: netadmin
+    password: nimdaten
+  - username: netman
+    password:
+  - username: netman
+    password: netman
+  - username: netopia
+    password: netopia
+  - username: netrangr
+    password: attack
+  - username: netscreen
+    password: netscreen
+  - username: nms
+    password: nmspw
+  - username: none
+    password: 0
+  - username: none
+    password: Wireless
+  - username: none
+    password: admin
+  - username: op
+    password: op
+  - username: op
+    password: operator
+  - username: operator
+    password:
+  - username: operator
+    password: $chwarzepumpe
+  - username: operator
     password: 1234
-  - username: 666666
-    password: 666666
-  - username: 888888
-    password: 888888
-  - username: ubnt
-    password: ubnt
+  - username: operator
+    password: operator
+  - username: ovwebusr
+    password: OvW*busr1
+  - username: patrol
+    password: patrol
+  - username: piranha
+    password: piranha
+  - username: piranha
+    password: q
+  - username: pmd
+    password:
+  - username: poll
+    password: tech
+  - username: public
+    password:
+  - username: public
+    password: public
+  - username: radware
+    password: radware
+  - username: rapport
+    password: r@p8p0r+
+  - username: rcust
+    password: rcustpw
+  - username: readonly
+    password: lucenttech2
+  - username: readwrite
+    password: lucenttech1
+  - username: recovery
+    password: recovery
+  - username: replicator
+    password: replicator
+  - username: ro
+    password: ro
+  - username: role1
+    password: admanager
+  - username: role1
+    password: admin
+  - username: role1
+    password: adrole1
+  - username: role1
+    password: adroot
+  - username: role1
+    password: ads3cret
+  - username: role1
+    password: adtomcat
+  - username: role1
+    password: advagrant
+  - username: role1
+    password: role1
+  - username: role1
+    password: tomcat
+  - username: role
+    password: changethis
   - username: root
-    password: klv1234
+    password:
   - username: root
-    password: Zte521
+    password: 0P3N
   - username: root
-    password: hi3518
-  - username: root
-    password: jvbzd
-  - username: root
-    password: anko
-  - username: root
-    password: zlxx.
-  - username: root
-    password: 7ujMko0vizxv
-  - username: root
-    password: 7ujMko0admin
-  - username: root
-    password: system
-  - username: root
-    password: ikwb
-  - username: root
-    password: dreambox
-  - username: root
-    password: user
-  - username: root
-    password: realtek
-  - username: root
-    password: 00000000
-  - username: admin
-    password: 1111111
-  - username: admin
     password: 1234
-  - username: admin
+  - username: root
     password: 12345
-  - username: admin
-    password: 54321
-  - username: admin
-    password: 123456
-  - username: admin
-    password: 7ujMko0admin
-  - username: admin
-    password: 1234
-  - username: admin
+  - username: root
+    password: 3ep5w2u
+  - username: root
+    password: Cisco
+  - username: root
+    password: Mau'dib
+  - username: root
+    password: Password1
+  - username: root
+    password: ROOT500
+  - username: root
+    password: admanager
+  - username: root
+    password: admin
+  - username: root
+    password: admin_1
+  - username: root
+    password: adrole1
+  - username: root
+    password: adroot
+  - username: root
+    password: ads3cret
+  - username: root
+    password: adtomcat
+  - username: root
+    password: advagrant
+  - username: root
+    password: ascend
+  - username: root
+    password: attack
+  - username: root
+    password: blender
+  - username: root
+    password: calvin
+  - username: root
+    password: changeme
+  - username: root
+    password: changethis
+  - username: root
+    password: cms500
+  - username: root
+    password: davox
+  - username: root
+    password: default
+  - username: root
+    password: fivranne
+  - username: root
+    password: ggdaseuaimhrke
+  - username: root
+    password: iDirect
+  - username: root
+    password: letacla
+  - username: root
+    password: owaspbwa
+  - username: root
     password: pass
-  - username: admin
-    password: meinsm
+  - username: root
+    password: password
+  - username: root
+    password: password1
+  - username: root
+    password: permit
+  - username: root
+    password: r00t
+  - username: root
+    password: root
+  - username: root
+    password: tini
+  - username: root
+    password: toor
+  - username: root
+    password: tslinux
+  - username: root
+    password: wyse
+  - username: rw
+    password: rw
+  - username: rwa
+    password: rwa
+  - username: sa
+    password:
+  - username: scmadmin
+    password: scmchangeme
+  - username: scout
+    password: scout
+  - username: security
+    password: security
+  - username: serial#
+    password: serial#
+  - username: server_admin
+    password: owaspbwa
+  - username: service
+    password: smile
+  - username: setup
+    password: changeme
+  - username: setup
+    password: setup
+  - username: smc
+    password: smcadmin
+  - username: spcl
+    password: 0
+  - username: storwatch
+    password: specialist
+  - username: stratacom
+    password: stratauser
+  - username: su
+    password: super
+  - username: super.super
+    password:
+  - username: super.super
+    password: master
+  - username: super
+    password: 5777364
+  - username: super
+    password: super
+  - username: super
+    password: surt
+  - username: superadmin
+    password: secret
+  - username: superman
+    password: 21241036
+  - username: superman
+    password: talent
+  - username: superuser
+    password:
+  - username: superuser
+    password: 123456
+  - username: superuser
+    password: admin
+  - username: supervisor
+    password:
+  - username: supervisor
+    password: PlsChgMe
+  - username: supervisor
+    password: supervisor
+  - username: support
+    password: h179350
+  - username: support
+    password: support
+  - username: support
+    password: supportpw
+  - username: sys
+    password: uplink
+  - username: sysadm
+    password: Admin
+  - username: sysadm
+    password: anicust
+  - username: sysadm
+    password: sysadm
+  - username: sysadmin
+    password: PASS
+  - username: sysadmin
+    password: password
+  - username: sysadmin
+    password: sysadmin
+  - username: system/manager
+    password: sys/change_on_install
+  - username: system
+    password: password
+  - username: system
+    password: sys
+  - username: target
+    password: password
+  - username: teacher
+    password: password
+  - username: tech
+    password:
+  - username: tech
+    password: field
   - username: tech
     password: tech
-  - username: mother
-    password: fucker
+  - username: telco
+    password: telco
+  - username: telecom
+    password: telecom
+  - username: tellabs
+    password: tellabs#1
+  - username: temp1
+    password: password
+  - username: tiara
+    password: tiaranet
+  - username: tiger
+    password: tiger123
+  - username: tomcat
+    password:
+  - username: tomcat
+    password: admanager
+  - username: tomcat
+    password: admin
+  - username: tomcat
+    password: adrole1
+  - username: tomcat
+    password: adroot
+  - username: tomcat
+    password: ads3cret
+  - username: tomcat
+    password: adtomcat
+  - username: tomcat
+    password: advagrant
+  - username: tomcat
+    password: changethis
+  - username: tomcat
+    password: password
+  - username: tomcat
+    password: password1
+  - username: tomcat
+    password: s3cret
+  - username: tomcat
+    password: tomcat
+  - username: topicalt
+    password: password
+  - username: topicnorm
+    password: password
+  - username: topicres
+    password: password
+  - username: user
+    password:
+  - username: user
+    password: pass
+  - username: user
+    password: password
+  - username: user
+    password: public
+  - username: user
+    password: tivonpw
+  - username: user
+    password: user
+  - username: vcr
+    password: NetVCR
+  - username: volition
+    password: volition
+  - username: vt100
+    password: public
+  - username: webadmin
+    password: 1234
+  - username: webadmin
+    password: webadmin
+  - username: websecadm
+    password: changeme
+  - username: wlse
+    password: wlsedb
+  - username: wlseuser
+    password: wlsepassword
+  - username: wradmin
+    password: trancell
+  - username: write
+    password: private
+  - username: xampp
+    password: xampp
+  - username: xbox
+    password: xbox
+  - username: xd
+    password: xd
   blockingio_timeout: 3
   telnet_read_timeout: 1
 category: telnet

@@ -1,18 +1,139 @@
 auth:
   credentials:
   - username: sa
-    password: ''
-  - username: sa
     password: sa
+  - username: sa
+    password: admin
+  - username: sa
+    password: superadmin
+  - username: sa
+    password: password
+  - username: sa
+    password: default
+  - username: admin
+    password: admin
+  - username: sa
+    password: RPSsql12345
+  - username: sa
+    password: $ei$micMicro
+  - username: ARIS9
+    password: N'*ARIS!1dm9n#'
+  - username: ADONI
+    password: BPMS
+  - username: gts
+    password: opengts
+  - username: sa
+    password: PracticeUser1
+  - username: sa
+    password: 42Emerson42Eme
+  - username: sa
+    password: sqlserver
+  - username: sa
+    password: Cardio.Perfect
+  - username: sa
+    password: vantage12!
+  - username: admin
+    password: netxms
+  - username: ADMIN
+    password: AIMS
+  - username: FB
+    password: AIMS
+  - username: sa
+    password: $easyWinArt4
+  - username: sa
+    password: DBA!sa@EMSDB123
+  - username: sa
+    password: V4in$ight
+  - username: sa
+    password: Pass@123
+  - username: admin
+    password: trinity
+  - username: LENEL
+    password: MULTIMEDIA
+  - username: sa
+    password: SilkCentral12!34
+  - username: stream
+    password: stream-1
+  - username: sa
+    password: cic
+  - username: cic
+    password: cic
+  - username: sa
+    password: cic!23456789
+  - username: cic
+    password: cic!23456789
+  - username: sa
+    password: Administrator1
+  - username: sa
+    password: M3d!aP0rtal
+  - username: sa
+    password: splendidcrm2005
+  - username: admin
+    password: gnos
+  - username: sa
+    password: Dr8gedog
+  - username: sa
+    password: dr8gedog
   - username: sa
     password: Password123
   - username: sa
-    password: password
-  - username: ADONI
-    password: BPMS
-    ref: https://github.com/govolution/betterdefaultpasslist/blob/master/mssql.txt
+    password: DBA!sa@EMSDB123
   - username: sa
-    password: sqlserver
+    password: SECAdmin1
+  - username: sa
+    password: skf_admin1
+  - username: sa
+    password: SecurityMaster08
+  - username: secure
+    password: SecurityMaster08
+  - username: sa
+    password: ''
+  - username: wasadmin
+    password: wasadmin
+  - username: maxadmin
+    password: maxadmin
+  - username: mxintadm
+    password: mxintadm
+  - username: maxreg
+    password: maxreg
+  - username: sa
+    password: capassword
+  - username: I2b2metadata
+    password: i2b2metadata
+  - username: I2b2demodata
+    password: i2b2demodata
+  - username: I2b2workdata
+    password: i2b2workdata
+  - username: I2b2metadata2
+    password: i2b2metadata2
+  - username: I2b2demodata2
+    password: i2b2demodata2
+  - username: I2b2workdata2
+    password: i2b2workdata2
+  - username: I2b2hive
+    password: i2b2hive
+  - username: mcUser
+    password: medocheck123
+  - username: aadbo
+    password: pwddbo
+  - username: wwdbo
+    password: pwddbo
+  - username: aaAdmin
+    password: pwAdmin
+  - username: wwAdmin
+    password: wwAdmin
+  - username: aaPower
+    password: pwPower
+  - username: wwPower
+    password: wwPower
+  - username: aaUser
+    password: pwUser
+  - username: wwUser
+    password: wwUser
+  - username: sa
+    password: #SAPassword!
+  - username: sa
+    password: xltek
 category: mssql
 default_port: 1433
 name: MSSQL

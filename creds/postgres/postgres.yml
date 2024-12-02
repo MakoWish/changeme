@@ -1,7 +1,21 @@
 auth:
   credentials:
+  - username: dcmadmin
+    password: passw0rd
+  - username: postgres
+    password: amber
   - username: postgres
     password: postgres
+  - username: postgres
+    password: password
+  - username: postgres
+    password: admin
+  - username: admin
+    password: admin
+  - username: admin
+    password: password
+  - username: postgres
+    password: 123
 category: postgres
 default_port: 5432
 name: postgres

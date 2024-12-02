@@ -19,7 +19,7 @@ auth:
   - username: QCC
     password: QLogic66
   - username: admin
-    password:
+    password: 
   - username: admin
     password: tomcat
   - username: root
@@ -34,6 +34,126 @@ auth:
     password: j5Brn9
   - username: role1
     password: tomcat
+  - username: admin
+    password: admanager
+  - username: admin
+    password: adrole1
+  - username: admin
+    password: adroot
+  - username: admin
+    password: ads3cret
+  - username: admin
+    password: adtomcat
+  - username: admin
+    password: advagrant
+  - username: admin
+    password: password
+  - username: admin
+    password: password1
+  - username: admin
+    password: Password1
+  - username: admin
+    password: vagrant
+  - username: both
+    password: admanager
+  - username: both
+    password: admin
+  - username: both
+    password: adrole1
+  - username: both
+    password: adroot
+  - username: both
+    password: ads3cret
+  - username: both
+    password: adtomcat
+  - username: both
+    password: advagrant
+  - username: both
+    password: tomcat
+  - username: manager
+    password: admanager
+  - username: manager
+    password: admin
+  - username: manager
+    password: adrole1
+  - username: manager
+    password: adroot
+  - username: manager
+    password: ads3cret
+  - username: manager
+    password: adtomcat
+  - username: manager
+    password: advagrant
+  - username: manager
+    password: manager
+  - username: role1
+    password: admanager
+  - username: role1
+    password: admin
+  - username: role1
+    password: adrole1
+  - username: role1
+    password: adroot
+  - username: role1
+    password: ads3cret
+  - username: role1
+    password: adtomcat
+  - username: role1
+    password: advagrant
+  - username: root
+    password: admanager
+  - username: root
+    password: admin
+  - username: root
+    password: adrole1
+  - username: root
+    password: adroot
+  - username: root
+    password: ads3cret
+  - username: root
+    password: adtomcat
+  - username: root
+    password: advagrant
+  - username: root
+    password: changethis
+  - username: root
+    password: owaspbwa
+  - username: root
+    password: password
+  - username: root
+    password: password1
+  - username: root
+    password: Password1
+  - username: root
+    password: r00t
+  - username: root
+    password: toor
+  - username: tomcat
+    password: 
+  - username: tomcat
+    password: admanager
+  - username: tomcat
+    password: admin
+  - username: tomcat
+    password: adrole1
+  - username: tomcat
+    password: adroot
+  - username: tomcat
+    password: ads3cret
+  - username: tomcat
+    password: adtomcat
+  - username: tomcat
+    password: advagrant
+  - username: tomcat
+    password: password
+  - username: tomcat
+    password: password1
+  - username: server_admin
+    password: owaspbwa
+  - username: admin
+    password: owaspbwa
+  - username: demo
+    password: demo
   success:
     status: 200
   type: basic_auth

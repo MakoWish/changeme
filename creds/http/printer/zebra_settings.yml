@@ -1,0 +1,27 @@
+auth:
+  credentials:
+  - password: '1234'
+    username: ''
+  headers: []
+  post:
+    password: '0'
+    username: ''
+  success:
+    body:
+    - Access Granted.
+    status: 200
+  type: post
+  url:
+  - /authorize
+category: printer
+contributor: MakoWish
+default_port: 80
+fingerprint:
+  body:
+  - Zebra Technologies
+  status: 200
+  url:
+  - /authorize
+name: Zebra Settings
+protocol: http
+ssl: false

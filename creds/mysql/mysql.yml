@@ -1,7 +1,51 @@
 auth:
   credentials:
   - username: root
+    password: mysql
+  - username: root
     password: root
+  - username: root
+    password: chippc
+  - username: admin
+    password: admin
+  - username: root
+    password: ''
+  - username: root
+    password: nagiosxi
+  - username: root
+    password: usbw
+  - username: cloudera
+    password: cloudera
+  - username: root
+    password: cloudera
+  - username: root
+    password: moves
+  - username: moves
+    password: moves
+  - username: root
+    password: testpw
+  - username: root
+    password: p@ck3tf3nc3
+  - username: mcUser
+    password: medocheck123
+  - username: root
+    password: mktt
+  - username: root
+    password: 123
+  - username: dbuser
+    password: 123
+  - username: asteriskuser
+    password: amp109
+  - username: asteriskuser
+    password: eLaStIx.asteriskuser.2oo7
+  - username: root
+    password: raspberry
+  - username: root
+    password: openauditrootuserpassword
+  - username: root
+    password: vagrant
+  - username: root
+    password: 123qweASD#
 category: ssh
 default_port: 3306
 name: MySQL

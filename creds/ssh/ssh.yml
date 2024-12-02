@@ -1,13 +1,269 @@
 auth:
   credentials:
   - username: root
-    password: password
+    password: calvin
   - username: root
     password: root
-  - username: admin
+  - username: root
+    password: toor
+  - username: administrator
     password: password
+  - username: NetLinx
+    password: password
+  - username: administrator
+    password: Amx1234!
+  - username: amx
+    password: password
+  - username: amx
+    password: Amx1234!
+  - username: admin
+    password: 1988
   - username: admin
     password: admin
+  - username: Administrator
+    password: Vision2
+  - username: cisco
+    password: cisco
+  - username: c-comatic
+    password: xrtwk318
+  - username: root
+    password: qwasyx21
+  - username: admin
+    password: insecure
+  - username: pi
+    password: raspberry
+  - username: user
+    password: user
+  - username: root
+    password: default
+  - username: root
+    password: leostream
+  - username: leo
+    password: leo
+  - username: localadmin
+    password: localadmin
+  - username: fwupgrade
+    password: fwupgrade
+  - username: root
+    password: rootpasswd
+  - username: admin
+    password: password
+  - username: root
+    password: timeserver
+  - username: admin
+    password: motorola
+  - username: cloudera
+    password: cloudera
+  - username: root
+    password: p@ck3tf3nc3
+  - username: apc
+    password: apc
+  - username: device
+    password: apc
+  - username: eurek
+    password: eurek
+  - username: netscreen
+    password: netscreen
+  - username: admin
+    password: avocent
+  - username: root
+    password: linux
+  - username: sconsole
+    password: 12345
+  - username: root
+    password: 5up
+  - username: cirros:cubswin
+    password: )
+  - username: root
+    password: uClinux
+  - username: root
+    password: alpine
+  - username: root
+    password: dottie
+  - username: root
+    password: arcsight
+  - username: root
+    password: unitrends1
+  - username: vagrant
+    password: vagrant
+  - username: root
+    password: vagrant
+  - username: m202
+    password: m202
+  - username: demo
+    password: fai
+  - username: root
+    password: fai
+  - username: root
+    password: ceadmin
+  - username: maint
+    password: password
+  - username: root
+    password: palosanto
+  - username: root
+    password: ubuntu1404
+  - username: root
+    password: cubox-i
+  - username: debian
+    password: debian
+  - username: root
+    password: debian
+  - username: root
+    password: xoa
+  - username: root
+    password: sipwise
+  - username: debian
+    password: temppwd
+  - username: root
+    password: sixaola
+  - username: debian
+    password: sixaola
+  - username: myshake
+    password: shakeme
+  - username: stackato
+    password: stackato
+  - username: root
+    password: screencast
+  - username: root
+    password: stxadmin
+  - username: root
+    password: nosoup4u
+  - username: root
+    password: indigo
+  - username: root
+    password: video
+  - username: default
+    password: video
+  - username: default
+    password: 
+  - username: ftp
+    password: video
+  - username: nexthink
+    password: 123456
+  - username: ubnt
+    password: ubnt
+  - username: root
+    password: ubnt
+  - username: sansforensics
+    password: forensics
+  - username: elk_user
+    password: forensics
+  - username: osboxes
+    password: osboxes.org
+  - username: root
+    password: osboxes.org
+  - username: sans
+    password: training
+  - username: user
+    password: password
+  - username: misp
+    password: Password1234
+  - username: hxeadm
+    password: HXEHana1
+  - username: acitoolkit
+    password: acitoolkit
+  - username: osbash
+    password: osbash
+  - username: enisa
+    password: enisa
+  - username: geosolutions
+    password: Geos
+  - username: pyimagesearch
+    password: deeplearning
+  - username: root
+    password: NM1$88
+  - username: remnux
+    password: malware
+  - username: hunter
+    password: hunter
+  - username: plexuser
+    password: rasplex
+  - username: root
+    password: openelec
+  - username: root
+    password: rasplex
+  - username: root
+    password: plex
+  - username: root
+    password: openmediavault
+  - username: root
+    password: ys123456
+  - username: root
+    password: libreelec
+  - username: openhabian
+    password: openhabian
+  - username: admin
+    password: ManagementConsole2015
+  - username: public
+    password: publicpass
+  - username: admin
+    password: hipchat
+  - username: nao
+    password: nao
+  - username: support
+    password: symantec
+  - username: root
+    password: max2play
+  - username: admin
+    password: pfsense
+  - username: root
+    password: root01
+  - username: root
+    password: nas4free
+  - username: USERID
+    password: PASSW0RD
+  - username: Administrator
+    password: p@ssw0rd
+  - username: root
+    password: freenas
+  - username: root
+    password: cxlinux
+  - username: admin
+    password: symbol
+  - username: admin
+    password: Symbol
+  - username: admin
+    password: superuser
+  - username: admin
+    password: admin123
+  - username: root
+    password: D13HH[
+  - username: root
+    password: blackarch
+  - username: root
+    password: dasdec1
+  - username: root
+    password: 7ujMko0admin
+  - username: root
+    password: 7ujMko0vizxv
+  - username: root
+    password: Zte521
+  - username: root
+    password: zlxx.
+  - username: root
+    password: compass
+  - username: hacker
+    password: compass
+  - username: samurai
+    password: samurai
+  - username: ubuntu
+    password: ubuntu
+  - username: root
+    password: openvpnas
+  - username: misp
+    password: Password1234
+  - username: root
+    password: wazuh
+  - username: student
+    password: password123
+  - username: root
+    password: roottoor
+  - username: centos
+    password: reverse
+  - username: root
+    password: reverse
+  - username: zyfwp
+    password: PrOw!aN_fXp
 category: ssh
 default_port: 22
 name: ssh

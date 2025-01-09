@@ -13,10 +13,11 @@ category: printer
 contributor: MakoWish
 default_port: 80
 fingerprint:
-  basic_auth_realm: Network Print Server
-  status: 401
+  body:
+  - <H1>Zebra Technologies<BR>
+  status: 200
   url:
-  - /server/TCPIPGEN.htm
+  - /
 name: Zebra TCPIPGEN
 protocol: http
 ssl: false

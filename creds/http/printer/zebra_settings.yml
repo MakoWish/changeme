@@ -18,7 +18,7 @@ contributor: MakoWish
 default_port: 80
 fingerprint:
   body:
-  - Zebra Technologies
+  - <H1>Zebra Technologies<BR>
   status: 200
   url:
   - /authorize

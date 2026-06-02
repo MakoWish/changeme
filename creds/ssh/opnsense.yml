@@ -1,0 +1,12 @@
+auth:
+  credentials:
+  - username: root
+    password: opnsense
+  - username: installer
+    password: opnsense
+category: ssh
+default_port: 22
+name: OPNsense SSH
+contributor: codex
+references:
+- https://docs.opnsense.org/manual/install.html

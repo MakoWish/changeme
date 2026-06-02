@@ -1,0 +1,28 @@
+auth:
+  credentials:
+  - username: neo4j
+    password: neo4j
+  success:
+    body:
+    - password_change_required
+    - password_change
+    status: 200
+  type: basic_auth
+  url:
+  - /user/neo4j
+category: general
+contributor: codex
+fingerprint:
+  body:
+  - Neo4j Browser
+  status: 200
+  url:
+  - /browser/
+default_port: 7474
+name: Neo4j Browser
+ssl: false
+references:
+- https://neo4j.com/docs/operations-manual/current/docker/introduction/
+- https://neo4j.com/docs/browser/deployment-modes/neo4j-server/
+- https://neo4j.com/developer/kb/a-lightweight-approach-to-testing-the-neo4j-rest-api-with-authentication/
+protocol: http

@@ -8,7 +8,7 @@ paramiko
 psycopg2
 pymongo
 pyodbc
-pysnmp
+pysnmp>=7.1
 python-libnmap
 python-memcached
 pyyaml

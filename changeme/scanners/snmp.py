@@ -1,4 +1,16 @@
-from pysnmp.hlapi import *
+import asyncio
+import threading
+
+from pysnmp.hlapi.asyncio import (
+    CommunityData,
+    ContextData,
+    ObjectIdentity,
+    ObjectType,
+    SnmpEngine,
+    UdpTransportTarget,
+    get_cmd,
+)
+
 from .scanner import Scanner
 
 
@@ -11,13 +23,40 @@ class SNMP(Scanner):
         return True
 
     def _check(self):
-        iterator = getCmd(SnmpEngine(),
-                          CommunityData(self.password),
-                          UdpTransportTarget((str(self.target.host), 161)),
-                          ContextData(),
-                          ObjectType(ObjectIdentity('SNMPv2-MIB', 'sysDescr', 0)))
+        return self._run_async_check()
 
-        errorIndication, errorStatus, errorIndex, varBinds = next(iterator)
+    def _run_async_check(self):
+        try:
+            asyncio.get_running_loop()
+        except RuntimeError:
+            return asyncio.run(self._async_check())
+
+        result = {}
+
+        def run_in_thread():
+            try:
+                result['value'] = asyncio.run(self._async_check())
+            except Exception as exc:
+                result['exception'] = exc
+
+        thread = threading.Thread(target=run_in_thread)
+        thread.start()
+        thread.join()
+
+        if 'exception' in result:
+            raise result['exception']
+
+        return result['value']
+
+    async def _async_check(self):
+        transport = await UdpTransportTarget.create((str(self.target.host), int(self.target.port)))
+        errorIndication, errorStatus, errorIndex, varBinds = await get_cmd(
+            SnmpEngine(),
+            CommunityData(self.password),
+            transport,
+            ContextData(),
+            ObjectType(ObjectIdentity('SNMPv2-MIB', 'sysDescr', 0)),
+        )
 
         evidence = ""
         if errorIndication:

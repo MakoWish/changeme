@@ -1,0 +1,27 @@
+auth:
+  credentials:
+  - username: minioadmin
+    password: minioadmin
+    raw: '{"accessKey":"minioadmin","secretKey":"minioadmin"}'
+  headers:
+  - Content-Type: application/json
+  success:
+    status: 204
+  type: raw_post
+  url:
+  - /api/v1/login
+category: general
+contributor: codex
+fingerprint:
+  body:
+  - <title>MinIO Console</title>
+  status: 200
+  url:
+  - /login
+default_port: 9001
+name: MinIO Console
+ssl: false
+references:
+- https://min.io/docs/minio/linux/reference/minio-server/settings/root-credentials.html
+- https://min.io/docs/minio/linux/administration/minio-console.html
+protocol: http

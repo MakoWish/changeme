@@ -1,0 +1,29 @@
+auth:
+  credentials:
+  - username: admin
+    password: openmediavault
+    raw: '{"service":"session","method":"login","params":{"username":"admin","password":"openmediavault"}}'
+  headers:
+  - Content-Type: application/json
+  success:
+    body:
+    - '"authenticated":true'
+    status: 200
+  type: raw_post
+  url:
+  - /rpc.php
+category: general
+contributor: codex
+fingerprint:
+  body:
+  - openmediavault
+  status: 200
+  url:
+  - /
+default_port: 80
+name: openmediavault
+ssl: false
+references:
+- https://docs.openmediavault.org/en/7.x/installation/index.html
+- https://www.openmediavault.org/?p=2089
+protocol: http

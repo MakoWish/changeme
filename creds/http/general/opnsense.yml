@@ -1,0 +1,34 @@
+auth:
+  credentials:
+  - username: root
+    password: opnsense
+  csrf: __csrf_magic
+  post:
+    username: usernamefld
+    password: passwordfld
+    login: Login
+  sessionid: PHPSESSID
+  success:
+    body:
+    - Lobby
+    - Dashboard
+    status: 200
+  type: post
+  url:
+  - /index.php
+category: general
+contributor: codex
+fingerprint:
+  body:
+  - OPNsense
+  status: 200
+  url:
+  - /
+default_port: 443
+name: OPNsense
+ssl: true
+references:
+- https://docs.opnsense.org/manual/install.html
+- https://docs.opnsense.org/manual/gui.html
+- https://forum.opnsense.org/index.php?topic=4690.0
+protocol: http

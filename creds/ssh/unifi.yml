@@ -1,0 +1,12 @@
+auth:
+  credentials:
+  - username: root
+    password: ui
+  - username: ui
+    password: ui
+category: ssh
+default_port: 22
+name: UniFi
+contributor: codex
+references:
+- https://help.ui.com/hc/en-us/articles/204909374-Connecting-to-UniFi-with-Debug-Tools-SSH

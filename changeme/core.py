@@ -20,7 +20,7 @@ PERSISTENT_QUEUE = "data.db" # Instantiated in the scan_engine class
 
 
 def banner(version):
-    b = """
+    b = r"""
  #####################################################
 #       _                                             #
 #   ___| |__   __ _ _ __   __ _  ___ _ __ ___   ___   #
@@ -158,7 +158,7 @@ class Config(object):
             ap.print_help()
             quit()
 
-        if self.proxy and re.match('^https?://[0-9\.]+:[0-9]{1,5}$', self.proxy):
+        if self.proxy and re.match(r'^https?://[0-9.]+:[0-9]{1,5}$', self.proxy):
             self.proxy = {'http': self.proxy, 'https': self.proxy}
             logger.info('Setting proxy to %s' % self.proxy)
         elif self.proxy:

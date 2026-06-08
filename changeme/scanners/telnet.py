@@ -72,7 +72,7 @@ class Telnet(Scanner):
 
     @staticmethod
     def _trim_string(str_to_trim):
-        return str(str_to_trim).replace(' ','').replace('\s','').replace('\t','').replace('\r','').replace('\n','')
+        return str(str_to_trim).replace(' ','').replace(r'\s','').replace('\t','').replace('\r','').replace('\n','')
 
     def _mkscanner(self, cred, target, u, p, config):
         return Telnet(cred, target, u, p, config)

@@ -16,30 +16,43 @@ You can load your targets using a variety of methods, single ip address/host, su
 
 ## Installation
 
-changeme has only been tested on Linux and has known issues on Windows and OS X/macOS. Use docker to run changeme on the unsupported platforms. It supports either a redis-backed queue (most stable) or an in-memory backed queue.
+changeme has only been tested on Linux and has known issues on Windows and OS X/macOS. Use Docker to run changeme on unsupported platforms. changeme supports either a redis-backed queue (most stable) or an in-memory backed queue.
 
-Stable versions of changeme can be found on the [releases](https://github.com/ztgrace/changeme/releases) page.
+### Debian/Ubuntu package
 
-For mssql support, `unixodbc-dev` needs to be installed prior to installing the `pyodbc`.
+The recommended installation path on Debian or Ubuntu is the packaged release. Stable versions of changeme are published on the [latest release](https://github.com/ztgrace/changeme/releases/latest) page as DEB assets.
 
-For postgres support, `libpq-dev` needs to be installed.
-
-[PhantomJS](http://phantomjs.org/) is required in your PATH for HTML report screenshots.
-
-Use `pip3` to install the required python modules into a `venv`:
+Download the newest DEB for your system architecture from the latest release and install it with `apt`:
 
 ```
-sudo apt install python3-venv libpq-dev unixodbc-dev
+ARCH=$(dpkg --print-architecture)
+curl -LO https://github.com/ztgrace/changeme/releases/latest/download/changeme_${ARCH}.deb
+sudo apt install ./changeme_${ARCH}.deb
+changeme --help
+```
+
+The package installs changeme into `/opt/changeme`, creates an isolated Python virtual environment in `/opt/changeme/.venv`, and adds `/usr/bin/changeme` as a symbolic link to the venv-backed launcher. During package configuration, the post-install step runs `pip install -r /opt/changeme/requirements.txt`, so the install host needs access to PyPI or a configured Python package mirror.
+
+For mssql support, `unixodbc-dev` must be installed before `pyodbc` is installed. For postgres support, `libpq-dev` must be installed. These dependencies are included in the DEB package metadata. [PhantomJS](http://phantomjs.org/) is required in your PATH for HTML report screenshots.
+
+### Manual install from source
+
+If you prefer not to use the DEB package, install the system and Python dependencies manually, then run changeme from a virtual environment:
+
+```
+sudo apt install python3-venv python3-pip python3-dev build-essential libpq-dev unixodbc-dev libxml2-dev libxslt1-dev zlib1g-dev
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 .venv/bin/python3 ./changeme.py --help
 ```
 
-### Debian package
+This keeps the Python modules isolated in `.venv`, but it does not create `/usr/bin/changeme` or manage upgrades/removal through the package manager. To upgrade a manual installation, pull or download a newer changeme release and re-run `.venv/bin/pip install -r requirements.txt`.
 
-Build a local DEB package when you want changeme installed under `/opt/changeme` with its Python dependencies isolated in `/opt/changeme/.venv`. The package version is read from the repository `VERSION` file.
+### Build a local DEB package
 
-Install the DEB build and venv dependency requirements first. The package post-install step runs `pip install -r /opt/changeme/requirements.txt`, so the install host needs access to PyPI or a configured Python package mirror.
+Build a local DEB package when you want to test packaging changes or install a package built from your checkout. The package version is read from the repository `VERSION` file.
+
+Install the DEB build requirements first:
 
 ```
 sudo apt install dpkg-dev python3 python3-venv python3-pip python3-dev build-essential libpq-dev unixodbc-dev libxml2-dev libxslt1-dev zlib1g-dev
@@ -51,8 +64,6 @@ Build and install the package:
 ./debian/build-deb.sh
 sudo apt install ./dist/changeme_$(cat VERSION)_$(dpkg --print-architecture).deb
 ```
-
-The package installs the application into `/opt/changeme`, installs requirements into `/opt/changeme/.venv` during package configuration, and creates `/usr/bin/changeme` as a symbolic link to the venv-backed launcher.
 
 ## Docker
 

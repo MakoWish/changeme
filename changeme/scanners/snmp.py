@@ -1,4 +1,5 @@
 import asyncio
+import inspect
 import threading
 import types
 
@@ -7,15 +8,15 @@ import types
 if not hasattr(asyncio, 'coroutine'):
     asyncio.coroutine = types.coroutine
 
-from pysnmp.hlapi.asyncio import (
-    CommunityData,
-    ContextData,
-    ObjectIdentity,
-    ObjectType,
-    SnmpEngine,
-    UdpTransportTarget,
-    get_cmd,
-)
+from pysnmp.hlapi import asyncio as pysnmp_asyncio
+
+CommunityData = pysnmp_asyncio.CommunityData
+ContextData = pysnmp_asyncio.ContextData
+ObjectIdentity = pysnmp_asyncio.ObjectIdentity
+ObjectType = pysnmp_asyncio.ObjectType
+SnmpEngine = pysnmp_asyncio.SnmpEngine
+UdpTransportTarget = pysnmp_asyncio.UdpTransportTarget
+get_cmd = getattr(pysnmp_asyncio, 'get_cmd', None) or getattr(pysnmp_asyncio, 'getCmd')
 
 from .scanner import Scanner
 
@@ -54,15 +55,32 @@ class SNMP(Scanner):
 
         return result['value']
 
-    async def _async_check(self):
-        transport = await UdpTransportTarget.create((str(self.target.host), int(self.target.port)))
-        errorIndication, errorStatus, errorIndex, varBinds = await get_cmd(
+
+    async def _make_transport_target(self):
+        address = (str(self.target.host), int(self.target.port))
+        if hasattr(UdpTransportTarget, 'create'):
+            return await UdpTransportTarget.create(address)
+
+        transport = UdpTransportTarget(address)
+        if inspect.isawaitable(transport):
+            return await transport
+        return transport
+
+    async def _get_sysdescr(self, transport):
+        result = get_cmd(
             SnmpEngine(),
             CommunityData(self.password),
             transport,
             ContextData(),
             ObjectType(ObjectIdentity('SNMPv2-MIB', 'sysDescr', 0)),
         )
+        if inspect.isawaitable(result):
+            result = await result
+        return result
+
+    async def _async_check(self):
+        transport = await self._make_transport_target()
+        errorIndication, errorStatus, errorIndex, varBinds = await self._get_sysdescr(transport)
 
         evidence = ""
         if errorIndication:

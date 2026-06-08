@@ -11,7 +11,6 @@ from .scanners.mssql import MSSQL
 from .scanners.mysql import MySQL
 from .scanners.postgres import Postgres
 from .scanners.redis_scanner import RedisScanner
-from .scanners.snmp import SNMP
 from .scanners.ssh import SSH
 from .scanners.ssh_key import SSHKey
 from .scanners.telnet import Telnet
@@ -203,7 +202,8 @@ class ScanEngine(object):
                 for proto, classname in scanner_map.items():
                     if cred['protocol'] == proto and (proto in self.config.protocols or self.config.all):
                         t = Target(host=target.host, port=target.port, protocol=proto)
-                        fingerprints.append(globals()[classname](cred, t, self.config, '', ''))
+                        scanner_class = self._get_scanner_class(classname)
+                        fingerprints.append(scanner_class(cred, t, self.config, '', ''))
 
         self.logger.info("Loading creds into queue")
         for fp in set(fingerprints):
@@ -211,6 +211,13 @@ class ScanEngine(object):
         self.total_fps = self.fingerprints.qsize()
         self.logger.debug('%i fingerprints' % self.fingerprints.qsize())
 
+
+    def _get_scanner_class(self, classname):
+        if classname == 'SNMP':
+            from .scanners.snmp import SNMP
+            return SNMP
+
+        return globals()[classname]
 
     def dry_run(self):
         self.logger.info("Dry run targets:")

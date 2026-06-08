@@ -99,6 +99,7 @@ Please see the [wiki](https://github.com/MakoWish/changeme/wiki) for more detail
 
 Thanks for code contributions and suggestions.
 
+* @ztgrace
 * @AlessandroZ
 * @m0ther_
 * @GraphX

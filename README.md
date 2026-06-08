@@ -81,7 +81,7 @@ See [Wiki Examples](https://github.com/MakoWish/changeme/wiki/Examples) for more
 
 ## Known Issues
 
-[x] The telnet scanner is broken. - FIXED!
+[X] The telnet scanner is broken. - FIXED!
 
 Additionally, anything filed under https://github.com/MakoWish/changeme/issues as a bug.
 

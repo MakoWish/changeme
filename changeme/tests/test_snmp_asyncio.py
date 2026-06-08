@@ -33,6 +33,10 @@ def build_scanner():
     return SNMP(cred, target, '', 'public', SimpleNamespace())
 
 
+def test_snmp_import_restores_asyncio_coroutine():
+    assert hasattr(asyncio, 'coroutine')
+
+
 def test_snmp_check_uses_asyncio_transport():
     scanner = build_scanner()
     with mock.patch('changeme.scanners.snmp.UdpTransportTarget', FakeUdpTransportTarget), \

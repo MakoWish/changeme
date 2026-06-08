@@ -270,10 +270,13 @@ def load_creds(config):
     cred_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'creds')
     logger.debug('cred_path: %s' % cred_path)
     protocols = [proto for proto in os.walk(cred_path)][0][1]
+    active_protocols = get_active_protocols(config, protocols)
     for root, dirs, files in os.walk(cred_path):
         for fname in files:
             f = os.path.join(root, fname)
             protocol = get_protocol(f)
+            if protocol not in active_protocols:
+                continue
             if is_yaml(f):
                 parsed = parse_yaml(f)
                 if parsed:
@@ -292,6 +295,24 @@ def load_creds(config):
 
     creds
     return creds
+
+
+def get_active_protocols(config, protocols):
+    if (getattr(config, 'all', False) or getattr(config, 'validate', False) or
+        getattr(config, 'dump', False) or getattr(config, 'contributors', False)):
+        return set(protocols)
+
+    target = getattr(config, 'target', None)
+    if target and '://' in target:
+        return set([target.split('://', 1)[0].strip().lower()])
+
+    configured = getattr(config, 'protocols', protocols)
+    if configured == 'all':
+        return set(protocols)
+    if isinstance(configured, str):
+        configured = configured.split(',')
+
+    return set([protocol.strip().lower() for protocol in configured if protocol.strip()])
 
 
 def validate_cred(cred, f, protocol):

@@ -1,4 +1,4 @@
-.TH CHANGEME "1" "June 2018" "changeme 1.1.1" "User Commands"
+.TH CHANGEME "1" "June 2026" "changeme 1.2.3" "User Commands"
 .SH NAME
 changeme \- Default Credential Scanner
 .SH DESCRIPTION
@@ -70,7 +70,7 @@ Output results files in csv, html and json formats
 .TP
 \fB\-\-protocols\fR PROTOCOLS
 Comma separated list of protocols to test:
-http,ssh,ssh_key. Defaults to http.
+ftp, http, mongodb, mssql, mysql, postgres, redis, snmp, ssh, ssh_key, telnet. Defaults to http.
 .TP
 \fB\-\-portoverride\fR
 Scan all protocols on all specified ports
@@ -123,4 +123,4 @@ Verbose output
 .TP
 \fBchangeme snmp://192.168.2.100\fR Scan a host for SNMP creds using the protocol syntax
 .SH AUTHOR
-changeme was developed by ztgrace, this manpage was made by Samuel Henrique <samueloph@debian.org> based on \fBchangeme --help\fR output and can be used by other projects as well.
+changeme was developed by ztgrace, this manpage was originally made by Samuel Henrique <samueloph@debian.org> based on \fBchangeme --help\fR output and can be used by other projects as well.

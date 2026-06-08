@@ -1,33 +1,30 @@
-FROM alpine:latest
-MAINTAINER Zach Grace (@ztgrace)
+FROM python:3.12-alpine
 
-RUN mkdir /changeme
+LABEL maintainer="Zach Grace (@ztgrace)"
+
+WORKDIR /changeme
 COPY . /changeme/
 
-RUN apk update \
-    && apk add --no-cache --virtual .changeme-deps \
+RUN apk add --no-cache --virtual .runtime-deps \
         bash \
         libxml2 \
-        py-lxml \
-        py-pip \
+        libxslt \
+        postgresql-libs \
+        unixodbc \
     && apk add --no-cache --virtual .build-deps \
-        ca-certificates \
-        gcc \
-        g++ \
-	    libffi-dev \
-        libtool \
+        build-base \
+        libffi-dev \
         libxml2-dev \
-        make \
-	    musl-dev \
+        libxslt-dev \
         postgresql-dev \
-        python-dev \
         unixodbc-dev \
-    && pip install -r /changeme/requirements.txt \
+        zlib-dev \
+    && pip install --no-cache-dir -r /changeme/requirements.txt \
     && apk del .build-deps \
-    && find /usr/ -type f -a -name '*.pyc' -o -name '*.pyo' -exec rm '{}' \; \
-    && ln -s /changeme/changeme.py /usr/local/bin/
+    && find /usr/local -type f \( -name '*.pyc' -o -name '*.pyo' \) -delete \
+    && ln -s /changeme/changeme.py /usr/local/bin/changeme
 
-ENV HOME /changeme
-ENV PS1 "\033[00;34mchangeme>\033[0m "
-WORKDIR /changeme
+ENV HOME=/changeme
+ENV PS1="\033[00;34mchangeme>\033[0m "
+
 ENTRYPOINT ["./changeme.py"]

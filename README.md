@@ -6,11 +6,11 @@ A default credential scanner.
 
 ## About
 
-changeme picks up where commercial scanners leave off. It focuses on detecting default and backdoor credentials and not necessarily common credentials. It's default mode is to scan HTTP default credentials, but has support for other credentials.
+changeme picks up where commercial scanners leave off. It focuses on detecting default and backdoor credentials and not necessarily common credentials. Its default mode is to scan HTTP default credentials, but has support for other credentials.
 
 changeme is designed to be simple to add new credentials without having to write any code or modules. changeme keeps credential data separate from code. All credentials are stored in [yaml](http://yaml.org/) files so they can be both easily read by humans and processed by changeme. Credential files can be created by using the `./changeme.py --mkcred` tool and answering a few questions.
 
-changeme supports the http/https, mssql, mysql, postgres, ssh, ssh w/key, snmp, mongodb and ftp protocols. Use `./changeme.py --dump` to output all of the currently available credentials.
+changeme supports the ftp, http/https, memcached, mongodb, mssql, mysql, postgres, redis, snmp, ssh, ssh w/key and telnet protocols. Use `./changeme.py --dump` to output all of the currently available credentials.
 
 You can load your targets using a variety of methods, single ip address/host, subnet, list of hosts, nmap xml file and Shodan query. All methods except for Shodan are loaded as a positional argument and the type is inferred.
 
@@ -64,6 +64,19 @@ Build and install the package:
 ./debian/build-deb.sh
 sudo apt install ./dist/changeme_$(cat VERSION)_$(dpkg --print-architecture).deb
 ```
+
+### Development setup
+
+Install runtime and test dependencies into a virtual environment before running the test suite:
+
+```
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt -r dev-requirements.txt
+pytest changeme/tests
+```
+
+Runtime dependencies live in `requirements.txt`; test-only tools live in `dev-requirements.txt` so packaged installations do not install the test runner.
 
 ## Usage Examples
 

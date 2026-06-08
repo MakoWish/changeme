@@ -16,6 +16,21 @@ import sys
 from . import version
 import yaml
 
+
+def get_supported_protocols():
+    cred_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'creds')
+    try:
+        return sorted([proto for proto in os.walk(cred_path)][0][1])
+    except IndexError:
+        return []
+
+
+def supported_protocols_help():
+    protocols = get_supported_protocols()
+    if protocols:
+        return 'Comma separated list of protocols to test: %s. Defaults to http.' % ', '.join(protocols)
+    return 'Comma separated list of protocols to test. Defaults to http.'
+
 PERSISTENT_QUEUE = "data.db" # Instantiated in the scan_engine class
 
 
@@ -220,7 +235,7 @@ def parse_args():
     ap.add_argument('--proxy', '-p', type=str, help='HTTP(S) Proxy', default=None)
     ap.add_argument('--output', '-o', type=str, help='Name of result file. File extension determines type (csv, html, json).', default=None)
     ap.add_argument('--oa', action='store_true', help='Output results files in csv, html and json formats', default=False)
-    ap.add_argument('--protocols', type=str, help="Comma separated list of protocols to test: http,ssh,ssh_key. Defaults to http.", default='http')
+    ap.add_argument('--protocols', type=str, help=supported_protocols_help(), default='http')
     ap.add_argument('--portoverride', action='store_true', help='Scan all protocols on all specified ports', default=False)
     ap.add_argument('--redishost', type=str, help='Redis server', default='localhost')
     ap.add_argument('--redisport', type=str, help='Redis server', default='6379')

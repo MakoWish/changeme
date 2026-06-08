@@ -1,5 +1,4 @@
 coverage
-mock
 mock-ssh-server
-nose
+pytest
 responses==0.7.0

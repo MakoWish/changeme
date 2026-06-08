@@ -1,4 +1,4 @@
-# changeme [![Build Status](https://travis-ci.org/ztgrace/changeme.svg?branch=master)](https://travis-ci.org/ztgrace/changeme)
+# changeme [![Build Status](https://travis-ci.org/MakoWish/changeme.svg?branch=master)](https://travis-ci.org/MakoWish/changeme)
 
 A default credential scanner.
 
@@ -26,7 +26,7 @@ Download the newest DEB for your system architecture from the latest release and
 
 ```
 ARCH=$(dpkg --print-architecture)
-curl -LO https://github.com/ztgrace/changeme/releases/latest/download/changeme_${ARCH}.deb
+curl -LO https://github.com/MakoWish/changeme/releases/latest/download/changeme_${ARCH}.deb
 sudo apt install ./changeme_${ARCH}.deb
 changeme --help
 ```
@@ -65,27 +65,6 @@ Build and install the package:
 sudo apt install ./dist/changeme_$(cat VERSION)_$(dpkg --print-architecture).deb
 ```
 
-## Docker
-
-A convenient way of running changeme is to do so inside a Docker container. You can run a pre-built container from Docker Hub, or build your own using the instructions below.
-
-### Run changeme in Docker
-
-Docker runs best in conjunction with Redis as a queue back end. Here's how to get a linked container setup working with Redis.
-
-Get the latest containers: `docker pull redis && docker pull ztgrace/changeme`
-
-Launch redis in the background: `docker run -d --name redis1 redis`
-
-Start changeme linking the redis container by name and mounting a local directory into the container's `/mnt` directory: `docker run -it -v /tmp/results:/mnt --link redis1:redis ztgrace/changeme:latest /bin/sh`
-
-Run changeme with a `--redishost` of `redis` and `--output` file in our mounted volume: `./changeme.py --redishost redis --output /mnt/results.csv --protocols ssh --threads 20 -d 192.168.1.0/24`
-
-### Build from Dockerfile
-
-1. Build the docker container: `docker build -t changeme .`
-2. Run changeme from inside the container: `docker run -it changeme /bin/bash'
-
 ## Usage Examples
 
 Below are some common usage examples.
@@ -104,11 +83,11 @@ See [Wiki Examples](https://github.com/MakoWish/changeme/wiki/Examples) for more
 
 The telnet scanner is broken.
 
-Additionally, anything filed under https://github.com/ztgrace/changeme/issues as a bug.
+Additionally, anything filed under https://github.com/MakoWish/changeme/issues as a bug.
 
 ## Bugs and Enhancements
 
-Bugs and enhancements are tracked at [https://github.com/ztgrace/changeme/issues](https://github.com/MakoWish/changeme/issues).
+Bugs and enhancements are tracked at [https://github.com/MakoWish/changeme/issues](https://github.com/MakoWish/changeme/issues).
 
 **Request a credential:** Please add an issue to Github and apply the credential label.
 
@@ -124,4 +103,4 @@ Thanks for code contributions and suggestions.
 * @m0ther_
 * @GraphX
 * @Equinox21_
-* https://github.com/ztgrace/changeme/graphs/contributors
+* https://github.com/MakoWish/changeme/graphs/contributors

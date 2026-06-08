@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+
+CHANGEME_HOME=/opt/changeme
+cd "$CHANGEME_HOME"
+exec "$CHANGEME_HOME/.venv/bin/python3" "$CHANGEME_HOME/changeme.py" "$@"

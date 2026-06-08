@@ -2,7 +2,7 @@
 
 A default credential scanner.
 
-![Basic Scan]([https://raw.githubusercontent.com/wiki/MakoWish/changeme/images/basic.gif](https://private-user-images.githubusercontent.com/26614684/604645247-ac007c9c-e623-4c0a-b527-1e9d6dedac73.gif))
+![Basic Scan](https://github.com/user-attachments/assets/ac007c9c-e623-4c0a-b527-1e9d6dedac73)
 
 ## About
 

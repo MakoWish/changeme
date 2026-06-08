@@ -7,9 +7,9 @@ from copy import deepcopy
 import csv
 import json
 import logging
-import mock
+from unittest import mock
 from .mock_responses import MockResponses
-from nose.tools import *
+import pytest
 import os
 import responses
 
@@ -262,12 +262,11 @@ def test_json_output(mock_args):
 
 dr_args = deepcopy(cli_args)
 dr_args['dryrun'] = True
-@raises(SystemExit)
 @mock.patch('argparse.ArgumentParser.parse_args', return_value=argparse.Namespace(**dr_args))
 def test_dryrun(mock_args):
     reset_handlers()
-    se = core.main()
-    assert se.found_q.qsize() == 0
+    with pytest.raises(SystemExit):
+        core.main()
 
 
 es_args = deepcopy(cli_args)

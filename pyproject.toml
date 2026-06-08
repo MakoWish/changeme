@@ -1,0 +1,12 @@
+[tool.pytest.ini_options]
+testpaths = ["changeme/tests"]
+python_files = [
+    "test_*.py",
+    "core.py",
+    "http.py",
+    "mongodb.py",
+    "snmp.py",
+    "memcached.py",
+    "redis_scanner.py",
+    "target.py",
+]

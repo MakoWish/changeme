@@ -35,6 +35,25 @@ python3 -m venv .venv
 .venv/bin/python3 ./changeme.py --help
 ```
 
+### Debian package
+
+Build a local DEB package when you want changeme installed under `/opt/changeme` with its Python dependencies isolated in `/opt/changeme/.venv`. The package version is read from the repository `VERSION` file.
+
+Install the DEB build and venv dependency requirements first. The package post-install step runs `pip install -r /opt/changeme/requirements.txt`, so the install host needs access to PyPI or a configured Python package mirror.
+
+```
+sudo apt install dpkg-dev python3 python3-venv python3-pip python3-dev build-essential libpq-dev unixodbc-dev libxml2-dev libxslt1-dev zlib1g-dev
+```
+
+Build and install the package:
+
+```
+./debian/build-deb.sh
+sudo apt install ./dist/changeme_$(cat VERSION)_$(dpkg --print-architecture).deb
+```
+
+The package installs the application into `/opt/changeme`, installs requirements into `/opt/changeme/.venv` during package configuration, and creates `/usr/bin/changeme` as a symbolic link to the venv-backed launcher.
+
 ## Docker
 
 A convenient way of running changeme is to do so inside a Docker container. You can run a pre-built container from Docker Hub, or build your own using the instructions below.

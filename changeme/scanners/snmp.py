@@ -1,5 +1,11 @@
 import asyncio
 import threading
+import types
+
+# Older pysnmp releases still reference asyncio.coroutine, which was
+# removed from Python's public asyncio namespace in newer interpreters.
+if not hasattr(asyncio, 'coroutine'):
+    asyncio.coroutine = types.coroutine
 
 from pysnmp.hlapi.asyncio import (
     CommunityData,

@@ -26,7 +26,14 @@ For postgres support, `libpq-dev` needs to be installed.
 
 [PhantomJS](http://phantomjs.org/) is required in your PATH for HTML report screenshots.
 
-Use `pip` to install the required python modules: `pip install -r requirements.txt`
+Use `pip3` to install the required python modules into a `venv`:
+
+```
+sudo apt install python3-venv libpq-dev unixodbc-dev
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
+.venv/bin/python3 ./changeme.py --help
+```
 
 ## Docker
 
